@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>
+        Check a number is Prime or
+        not using JavaScript
+    </title>
+     
+    <script type="text/javascript">
+        var n, i, flag = true;
+        n = 4;
+            n = parseInt(n)
+            for(i = 2; i <= n - 1; i++)
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+                 
+                // Check and display alert message
+            if (flag == true)
+                alert(n + " is prime");
+            else
+                alert(n + " is not prime");
+                const occurrences = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4].reduce(function (acc, curr) {
+  return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+}, {});
+
+console.log(occurrences)
+        
+    </script>
